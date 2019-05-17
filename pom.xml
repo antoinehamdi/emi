@@ -20,6 +20,19 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>12</java.version>
 	</properties>
+	
+	<repositories>
+    <snapshotRepository>
+      <id>nexus.snapshots</id>
+      <name>repo snapshot</name>
+      <url>http://192.168.3.45:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>nexus.releases</id>
+      <name>repo releases</name>
+      <url>http://192.168.3.45:8081/repository/maven-releases/</url>
+    </repository>
+  </repositories>
 
 	<dependencies>
 		<dependency>
@@ -86,17 +99,5 @@
       		</plugin>
 		</plugins>
 	</build>
-	<repositories>
-    <snapshotRepository>
-      <id>nexus.snapshots</id>
-      <name>repo snapshot</name>
-      <url>http://192.168.3.45:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
-    <repository>
-      <id>nexus.releases</id>
-      <name>repo releases</name>
-      <url>http://192.168.3.45:8081/repository/maven-releases/</url>
-    </repository>
-  </repositories>
 
 </project>
