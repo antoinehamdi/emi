@@ -23,7 +23,7 @@ public class Driver {
     //Environment variables to connect to mongodb database
     String admin = "admin";
     String passwd = "admin123";
-    String url = "192.168.3.47";
+    String url = "192.168.1.147";
     String port = "27017";
     
     //Create a connection
