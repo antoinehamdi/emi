@@ -1,4 +1,4 @@
-FROM 12.0.1-jdk-oraclelinux7
+FROM openjdk:12.0.1-jdk-oraclelinux7
 MAINTAINER Hajar Binks
 ENTRYPOINT ["/usr/bin/java", "-jar", "/usr/share/myservice/myservice.war"]
 # Add Maven dependencies (not shaded into the artifact; Docker-cached)
