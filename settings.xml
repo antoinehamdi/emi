@@ -27,7 +27,7 @@
         <mirror>
           <id>nexus.central</id>
           <name>Nexus Central</name>
-          <url>http://192.168.3.45:8081/repository/maven-central/</url>
+          <url>http://192.168.1.150:8081/repository/maven-central/</url>
           <mirrorOf>central</mirrorOf>
         </mirror>
       </mirrors>

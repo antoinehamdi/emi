@@ -25,12 +25,12 @@
     <snapshotRepository>
       <id>nexus.snapshots</id>
       <name>repo snapshot</name>
-      <url>http://192.168.3.45:8081/repository/maven-snapshots/</url>
+      <url>http://192.168.1.150:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
     <repository>
       <id>nexus.releases</id>
       <name>repo releases</name>
-      <url>http://192.168.3.45:8081/repository/maven-releases/</url>
+      <url>http://192.168.1150:8081/repository/maven-releases/</url>
     </repository>
   </distributionManagement>
 
