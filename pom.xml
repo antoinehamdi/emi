@@ -85,7 +85,7 @@
 			    </execution>
 			  </executions>
 			  <configuration>
-			    <repository>http://192.168.1.150:8081/repository/dock/spotify/foobar</repository>
+			    <repository>wunderit/projetcd</repository>
 			    <tag>${project.version}</tag>
 			    <buildArgs>
 			      <JAR_FILE>${project.build.finalName}.${project.packaging}</JAR_FILE>
