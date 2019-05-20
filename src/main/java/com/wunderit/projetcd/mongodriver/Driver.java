@@ -21,10 +21,10 @@ import org.bson.Document;
 public class Driver {
 
     //Environment variables to connect to mongodb database
-    String admin = ${env.MONGODB_ADMIN_USER};
-    String passwd = ${env.MONGODB_ADMIN_PWD};
-    String url = ${env.MONGODB_URL};
-    String port = ${env.MONGODB_PORT};
+   String admin = System.getenv().get("MONGODB_ADMIN_USER");
+    String passwd = System.getenv().get("MONGODB_ADMIN_PWD");
+    String url = System.getenv().get("MONGODB_URL");
+    String port = System.getenv().get("MONGODB_PORT");
     
     //Create a connection
     MongoClient mongoClient = MongoClients.create("mongodb://"+admin+":"+passwd+"@"+url+":"+port);
