@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dep
+  namespace: default
+  labels:
+    app: hello
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello
+  template:
+    metadata:
+      labels:
+        app: hello
+    spec:
+      containers:
+      - name: emi
+        image: emiup/wunderit-projetcd:1.1-SNAPSHOT
+        resources:
+          limits:
+            memory: "200Mi"
+            cpu: "500m"
+          requests:
+            memory: "10Mi"
+            cpu: "50m"
+        ports:
+        - containerPort: 8080
+        imagePullPolicy: Always
